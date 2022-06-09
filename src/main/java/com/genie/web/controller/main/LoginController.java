@@ -1,4 +1,4 @@
-package com.genie.web.controller;
+package com.genie.web.controller.main;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -6,14 +6,14 @@ import javax.servlet.http.HttpServletResponse;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.Controller;
 
-public class IndexController implements Controller {
+public class LoginController implements Controller {
 
 	@Override
 	public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
-		ModelAndView mv = new ModelAndView("index");
-		mv.addObject("data","Hello Spring MVC~");
+		ModelAndView mv = new ModelAndView("main.login");
+		
 		
 		return mv;
 	}
-	
+
 }

@@ -8,15 +8,30 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
 		http://www.springframework.org/schema/mvc
 		https://www.springframework.org/schema/mvc/spring-mvc.xsd">
-	<!-- view 경로 설정 -->
+	<!-- view 경로 설정 (Controller 반환 값 연결) -->
+	<!-- tiles 요청시 -->
+	<bean class="org.springframework.web.servlet.view.UrlBasedViewResolver" >
+		<property name="viewClass"
+			value="org.springframework.web.servlet.view.tiles3.TilesView" />	
+		<property name="order" value="1" />
+	</bean>
+	
+	<bean class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
+		<property name="definitions" value="/WEB-INF/tiles.xml" />
+	</bean>
+	<!-- 일반 요청시 -->
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" >
 		<property name="prefix" value="/WEB-INF/view/" />
 		<property name="suffix" value=".jsp" />
+		<property name="order" value="2" />
 	</bean>
 	<!-- 리소스 파일 경로 설정 -->
 	<mvc:resources location="/static/" mapping="/**" />
 	
-	<bean id="/index" class="com.genie.web.controller.IndexController" /> 
+	<!-- 요청이 왔을떄 Controller 연결 -->
+	<bean id="/index" class="com.genie.web.controller.main.IndexController" />
+	<bean id="/join" class="com.genie.web.controller.main.JoinController" />
+	<bean id="/login" class="com.genie.web.controller.main.LoginController" />
 	
 	
 </beans>
