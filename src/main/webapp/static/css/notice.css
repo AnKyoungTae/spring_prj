@@ -1,0 +1,21 @@
+.container{
+    position: relative;
+    top: 150px;
+}
+.search{
+    position: absolute;
+    left: 68%;
+    top: -30px;
+}
+.pageing{
+    text-align: center;
+    margin-top: 20px;
+}
+.legi{
+    position: absolute;
+    left: 82%;
+}
+.pageview{
+    position: absolute;
+    right: 80%;
+}

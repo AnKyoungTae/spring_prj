@@ -12,7 +12,7 @@
         <div>
             <a href="#">여행 용품</a>
             <a href="#">나의 여행계획</a>
-            <a href="#">자유 게시판</a>
+            <a href="notice">자유 게시판</a>
             <a href="#">공지사항</a>
         </div>
     </nav>

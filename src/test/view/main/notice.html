@@ -2,44 +2,87 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>공지사항</title>
+    <link rel="stylesheet" href="../../resources/css/index.css" type="text/css">
     <style>
-        table{
-            text-align: center;
-            width: 50%;
-            margin: auto;
-            margin-top: 100px;
-            border-collapse: collapse;
-        }
-        th, td{
-            border-bottom: 1px solid #CD5C5C;
-            padding: 10px;
-        }
+
     </style>
 </head>
-<body>
+<body style="margin: 0px;">
+    <header style="text-align: center;">
+        <div class="title">
+            <h1><a href="#"  >Genie Travel</a></h1>
+            <div class="join">
+                <button onclick="location.href='login.html'">로그인</button>
+                <button onclick="location.href='join.html'">회원가입</button>
+            </div>
+        </div>
+        <nav>
+            <div>
+                <a href="#">여행 용품</a>
+                <a href="#">나의 여행계획</a>
+                <a href="#">자유 게시판</a>
+                <a href="#">공지사항</a>
+            </div>
+        </nav>
+    </header>
     <div>
-        <table>
-            <thead>
-                <tr>
-                    <th >No</th>
-                    <th width="500">제목</th>
-                    <th >작성자</th>
-                    <th >게시일</th>
-                    <th >조회수</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>안녕하세요</td>
-                    <td>운영자</td>
-                    <td>2022.06.07</td>
-                    <td>1</td>
-                </tr>
-            </tbody>
+        <img src="../../resources/08.jpg" alt="이미지가 없습니다." width="100%" height="300">
+    </div>
+
+    <div class="container">
+        <!-- 검색기능 -->
+        <div class="search">
+            <form action="" method="get">
+                <select name="title">
+                    <option value="title">제목</option>
+                    <option value="Writer">작성자</option>
+                </select>
+                <input type="text" >
+                <input type="submit" value="검색">
+            </form>
+        </div>
+        <!-- 게시판 테이블-->
+        <table >
+                <thead>
+                    <tr>
+                        <th >No</th>
+                        <th width="600">제목</th>
+                        <th >작성자</th>
+                        <th >게시일</th>
+                        <th >조회수</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>안녕하세요</td>
+                        <td>운영자</td>
+                        <td>2022.06.07</td>
+                        <td>1</td>
+                    </tr>
+                </tbody>
         </table>
-        <input type="button" value="등록" onclick="">
+        <!-- 페이징 -->
+        <div>
+            <div class="pageview">
+                1/5 page
+            </div>
+            <div class="page">
+                <button>이전</button>
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+                <button>다음</button>
+            </div>
+        </div>
+        <!-- 버튼 -->
+        <div class="legi">
+            <button>글쓰기</button>
+        </div>
     </div>
 
     

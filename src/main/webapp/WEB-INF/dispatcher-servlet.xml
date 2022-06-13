@@ -32,6 +32,7 @@
 	<bean id="/index" class="com.genie.web.controller.main.IndexController" />
 	<bean id="/join" class="com.genie.web.controller.main.JoinController" />
 	<bean id="/login" class="com.genie.web.controller.main.LoginController" />
+	<bean id="/notice" class="com.genie.web.controller.notice.ListController" />
 	
 	
 </beans>

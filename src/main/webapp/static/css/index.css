@@ -26,12 +26,15 @@ table{
     border: 1px solid #CD5C5C;
     text-align: center;
     margin: auto;
-    margin-top: 60px;
     border-collapse: collapse;
-    width: 70%;
     background-color: #F8F8FF;
+    width: 70%;
+    table-layout:fixed;
 }
 th, td{
     border-bottom: 1px solid #CD5C5C;
     padding: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
