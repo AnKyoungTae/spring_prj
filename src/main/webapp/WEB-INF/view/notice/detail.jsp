@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     <div class="container">
-        <table style="text-align: center;">
+        <table id="noticeView" style="text-align: center;">
 			<thead>
 				<tr>
 					<th colspan="4">${n.title }</th>
