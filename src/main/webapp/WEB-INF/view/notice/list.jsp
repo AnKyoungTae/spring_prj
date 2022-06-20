@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
     <div class="container">
         <!-- 검색기능 -->
         <div class="search">
@@ -26,13 +27,15 @@
 		                    </tr>
 		                </thead>
 		                <tbody>
+		                <c:forEach var="n"  items="${list }" >
 		                    <tr>
-		                        <td>1</td>
-		                        <td>안녕하세요</td>
-		                        <td>운영자</td>
-		                        <td>2022.06.07</td>
-		                        <td>1</td>
+		                        <td>${n.boardnum }</td>
+		                        <td><a href="detail?id=${n.boardnum }">${n.title }</a></td>
+		                        <td>${n.userId }</td>
+		                        <td>${n.regDate }</td>
+		                        <td>${n.hit }</td>
 		                    </tr>
+		                </c:forEach>
 		                </tbody>
 		        </table>
 	        </div>

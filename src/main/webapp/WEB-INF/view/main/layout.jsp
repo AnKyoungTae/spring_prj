@@ -6,6 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/index.css" type="text/css">
+    <link rel="stylesheet" href="css/notice.css" type="text/css">
     <style>
 	    input{
 	        margin: 5px;
@@ -27,7 +28,6 @@
 	<tiles:insertAttribute name="body" />
 
     <!--footer 부분-->
-    <br><br><br><br><br><br>
 	<tiles:insertAttribute name="footer" />
 
 </body>
