@@ -16,7 +16,7 @@
         <!-- 게시판 테이블-->
         <div >
         	<div>
-		        <table>
+		        <table id="noticeView">
 		                <thead>
 		                    <tr>
 		                        <th >No.</th>

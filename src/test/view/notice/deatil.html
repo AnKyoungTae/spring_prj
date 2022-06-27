@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container">
-        <table style="text-align: center;">
+        <table id="noticeView" style="text-align: center;">
 			<thead>
 				<tr>
 					<th colspan="4">제목</th>
@@ -23,15 +23,15 @@
 					<th >내용</th>
 				</tr>
 				<tr>
-					<td colspan="4"></textarea></td>
+					<td colspan="4" style="white-space: normal;">본문</td>
 				</tr>
 			</tbody>
 		</table>
-		
-		<span><button type="button" >목록</button></span>
-		<span><button type="button" >수정</button></span>
-		<span><button type="button" >삭제</button></span>
-		
+		<div class="deatilButton">
+			<span><a href="/">목록</a></span>
+			<span><a href="/">수정</a></span>
+			<span><a href="/">삭제</a></span>
+		</div>
     </div>
 </body>
 </html>

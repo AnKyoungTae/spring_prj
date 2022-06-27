@@ -18,7 +18,7 @@ public class NoticeDao {
 	private static String passwd = "5369";
 	private Connection con = null;
 	private Notice notice;
-	
+	//리스트 DAO
 	public List<Notice> getList(){
 		String sql = "select n.* from (select @rownum := @rownum +1 rn , n.* from (select * from notice "
 				+ "order by regdate desc) n,(select @rownum := 0) rn) n "
@@ -52,7 +52,7 @@ public class NoticeDao {
 		
 		return list;
 	}
-	
+	//디테일 DAO
 	public Notice getDetail(int id){
 		String sql = "select * from notice "
 				+ "where BOARDNUM = ? ";
@@ -86,6 +86,10 @@ public class NoticeDao {
 		return notice;
 	}
 	
+	public void postDel(int boardnum) {
+		
+	}
+	//JDBC 드라이버 연결
 	public void connDB() {
 		
 		try {

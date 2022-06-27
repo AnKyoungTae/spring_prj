@@ -22,7 +22,7 @@ nav a{
     color: aliceblue;
     margin: 15px;
 }
-table{
+#noticeView{
     border: 1px solid #CD5C5C;
     text-align: center;
     margin: auto;
@@ -38,6 +38,7 @@ th, td{
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
 .container{
     position: relative;
     top: 150px;
@@ -58,4 +59,9 @@ th, td{
 .pageview{
     position: absolute;
     right: 80%;
+}
+.deatilButton {
+    position: absolute;
+    left: 77%;
+    top: 150px;
 }

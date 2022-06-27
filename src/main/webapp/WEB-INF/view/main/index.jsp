@@ -32,7 +32,7 @@
     <!-- main 부분 -->
     <div style="display: flex;">
         <div style="width: 50%">
-            <table>
+            <table id="noticeView">
                 <caption style="margin: 20px; font-size: 30px;">공지사항</caption>
                 <thead>
                     <tr>
@@ -56,7 +56,7 @@
         </div>
 
         <div style="width: 50%">
-            <table>
+            <table id="noticeView">
                 <caption style="margin: 20px; font-size: 30px;">자유게시판</caption>
                 <thead>
                     <tr>
