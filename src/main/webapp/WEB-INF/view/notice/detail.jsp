@@ -31,6 +31,9 @@
 				location.href="notice?b=${n.boardnum }";
 				alert("삭제 되었습니다.");
 			}
-			else alert("취소 되었습니다.");
+			else {
+				location.href="detail?id=${n.boardnum}";
+				alert("취소 되었습니다.");
+			}
 		}
 	</script>
