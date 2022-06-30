@@ -32,14 +32,14 @@
 	<bean id="/index" class="com.genie.web.controller.main.IndexController" />
 	<bean id="/join" class="com.genie.web.controller.main.JoinController" />
 	<bean id="/login" class="com.genie.web.controller.main.LoginController" />
-	<bean id="/notice" class="com.genie.web.controller.notice.ListController" >
-		<property name="noticeDao" ref="noticeDao" />
+	<bean id="/boardList" class="com.genie.web.controller.freeboard.ListController" >
+		<property name="freeBoardDao" ref="freeBoardDao" />
 	</bean>
-	<bean id="/detail" class="com.genie.web.controller.notice.DetailController" >
-		<property name="noticeDao" ref="noticeDao" />
+	<bean id="/boardDetail" class="com.genie.web.controller.freeboard.DetailController" >
+		<property name="freeBoardDao" ref="freeBoardDao" />
 	</bean>
 	
 	<!-- DAO  -->
-	<bean id="noticeDao" class="com.genie.web.DAO.NoticeDao" />
+	<bean id="freeBoardDao" class="com.genie.web.DAO.FreeBoardDao" />
 	
 </beans>

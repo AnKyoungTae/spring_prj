@@ -27,12 +27,13 @@
 	</div>
 	<script>
 		function postDel(){
-			if(confirm("게시글을 삭제 하시겠습니까?")){
-				location.href="notice?b=${n.boardnum }";
+			const value = confirm("게시글을 삭제 하시겠습니까?");
+			
+			if(value){
+				location.href="boardList?b=${n.boardnum }";
 				alert("삭제 되었습니다.");
-			}
-			else {
-				location.href="detail?id=${n.boardnum}";
+			}else {
+				location.href="boardDetail?b=${n.boardnum }";
 				alert("취소 되었습니다.");
 			}
 		}

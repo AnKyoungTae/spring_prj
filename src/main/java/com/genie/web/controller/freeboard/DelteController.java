@@ -1,4 +1,4 @@
-package com.genie.web.controller.notice;
+package com.genie.web.controller.freeboard;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

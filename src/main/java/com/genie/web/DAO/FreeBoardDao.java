@@ -12,7 +12,7 @@ import java.util.List;
 import com.genie.web.entity.Notice;
 
 
-public class NoticeDao {
+public class FreeBoardDao {
 	private String url = "jdbc:mysql://127.0.0.1:3306/test1?useUnicode=true&serverTimezone=Asia/Seoul";
 	private static String User = "KT";
 	private static String passwd = "5369";
